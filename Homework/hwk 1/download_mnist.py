@@ -38,7 +38,7 @@ def init():
 
 #    print ((load()[0]).shape)
 def load():
-    with open("mnist.pkl", 'rb') as f:
+    with open("D:\Rutgers/2nd Semester\Intro to DL\Homework\hwk 1/mnist.pkl", 'rb') as f:
         mnist = pickle.load(f)
     return mnist["training_images"], mnist["training_labels"], mnist[
         "test_images"], mnist["test_labels"]

@@ -1,30 +1,35 @@
 import numpy as np
-import matplotlib as mpl
-import matplotlib.pyplot as plt
-import heapq
-from collections import Counter
-mpl.use('Agg')
+from download_mnist import load
+# import operator
+import time
+# classify using kNN
+# x_train = np.load('../x_train.npy')
+# y_train = np.load('../y_train.npy')
+# x_test = np.load('../x_test.npy')
+# y_test = np.load('../y_test.npy')
+x_train_ori, y_train, x_test_ori, y_test = load()
+x_train_ori = x_train_ori.reshape(60000, 28, 28)
+x_test_ori = x_test_ori.reshape(10000, 28, 28)
+x_train_ori = x_train_ori.astype(float)
+x_test_ori = x_test_ori.astype(float)
 
-# load mini training data and labels
-mini_train = np.load(
-    'D:\Rutgers/2nd Semester\Intro to DL\Homework\knn_minitrain.npy')
-mini_train_label = np.load(
-    'D:\Rutgers/2nd Semester\Intro to DL\Homework\knn_minitrain_label.npy')
+# turn each entry into an 1-D array
+x_train = []
+x_test = []
+for X_pic in x_train_ori:
+    tmp = []
+    for X in X_pic:
+        tmp = np.append(tmp, X)
+    x_train.append(tmp)
 
-# randomly generate test data
+for X_pic in x_test_ori:
+    tmp = []
+    for X in X_pic:
+        tmp = np.append(tmp, X)
+    x_test.append(tmp)
 
-nums = [1, 1, 1, 1, 8, 2, 23, 7, -4, 18, 23, 24, 37, 2]
+x_train = np.array(x_train)
+x_test = np.array(x_test)
 
-# 最大的3个数的索引
-max_num_index_list = map(nums.index, heapq.nlargest(3, nums))
-
-# 最小的3个数的索引
-min_num_index_list = map(nums.index, heapq.nsmallest(3, nums))
-
-'''
-print(list(max_num_index_list))
-print(list(min_num_index_list))
-'''
-
-k = range(4)
-print(k[3])
+print(x_train.shape)
+print(x_test.shape)

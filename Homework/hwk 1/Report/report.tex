@@ -37,6 +37,36 @@ When $K=3$, all the three points would be chose to decide the class of test data
 test data would be classified to be A.
 
 \section*{problem 2}
+In this problem, we are supposed to use the KNN to classify
+the data into 4 classes -- $[0,1,2,3]$
+
+And the following picture shows the distribution of the 
+training data and test data. As we can see, the stars 
+are the test data predicted by the model we established
+and the dots are the training data.
+
+\begin{figure}[H]
+    \centerline{\includegraphics[scale=0.5]{Pic/miniknn.png}}
+    \caption{miniKNN}
+\end{figure}
+
+\section*{problem 3}
+In this section, the data we accepted is a $28\times 28$ image.
+To accomplish the training process, we need to do convert the
+images into one dimensional array. Here I use \verb|append()|
+to merge the 28 row into an array with 784 attributes.
+
+And the trainning process can be achieved with the same code 
+from problem 2.
+
+As we can see, I choose the data from 600 to 630 and I finally
+achieve an accuracy of $97\%$. The whole process took about 10
+seconds.
+
+\begin{figure}[H]
+    \centerline{\includegraphics[scale=0.7]{Pic/knn.png}}
+    \caption{KNN}
+\end{figure}
 
 
 \end{document}
