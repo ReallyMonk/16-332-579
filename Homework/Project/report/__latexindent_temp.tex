@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{listings}
+\usepackage{color}
+
+\begin{document}
+
+\title{\textbf{Introduction to Deep Learning Final Report}}
+\author{Jin Xu \and Runlin Hou}    
+\maketitle
+
+
+\section{Introduction}
+The topic our team chooses is that manually implement a fully-connected NN using Numpy. And 
+we finally implement a four-layer fully connected neural network. According to the requirement, 
+we are training this model on the MNIST dataset and get accuracy above 90\% at around 200 
+epoch.
+
+\section{Dataset}
+The dataset we are using is MNIST. This is a large dataset of handwritten digits from 0-9 that 
+is commonly used for training various image processing systems. And these numbers are from 250 
+different people, which 50\% of them are middle school students, and 50\% of them are faculty 
+of the Census Bureau. The dataset itself is divided into a training set that has 60000 samples, 
+and a testing set has 10000 samples.  Each image in this dataset has 28x28 pixels. So in the 
+training process, we will falt each image into a 784 dimension vector.
+
+\section{Model}
+As mentioned in the last section, we build a four-layer network. Considering the image data will be taken, the first layer has 784 neurons and will output 200 neurons. The two hidden layers have 200 and 10 dimensions, respectively.
+
+\section{Methods}
+\subsection*{ReLU}
+For ReLU we choose to use the Ramp function, which is a widely used rectifier in the machine 
+learning field. As its name showed, the graph of ramp function looks like a ramp. And can be 
+described mathematically as follow:
+\begin{equation*}
+    R(x):=max(0,x)
+\end{equation*}
+
+
+
+
+\end{document}
