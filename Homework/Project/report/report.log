@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.2.8)  11 MAY 2020 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.2.8)  14 MAY 2020 14:25
 entering extended mode
 **"f:/Rutgers/2ndSemester/Intro to DL/Homework/Project/report/report.tex"
 ("f:/Rutgers/2ndSemester/Intro to DL/Homework/Project/report/report.tex"
@@ -420,10 +420,10 @@ Overfull \hbox (1.53511pt too wide) in paragraph at lines 38--39
 [1
 
 {C:/Users/Really Monkey/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <./network.png>]
-<accuracy.png, id=14, 361.35pt x 217.5628pt>
+<accuracy.png, id=17, 361.35pt x 217.5628pt>
 File: accuracy.png Graphic file (type png)
 <use accuracy.png>
-Package pdftex.def Info: accuracy.png  used on input line 69.
+Package pdftex.def Info: accuracy.png  used on input line 79.
 (pdftex.def)             Requested size: 361.34912pt x 217.56227pt.
  [3 <./accuracy.png>] (report.aux) ) 
 Here is how much of TeX's memory you used:
@@ -433,9 +433,9 @@ Here is how much of TeX's memory you used:
  9729 multiletter control sequences out of 15000+200000
  12403 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,37p,357b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,8n,37p,357b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (3 pages, 261804 bytes).
+Output written on report.pdf (3 pages, 263540 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

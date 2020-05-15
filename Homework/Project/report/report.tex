@@ -47,6 +47,16 @@ described mathematically as follow:
     R(x):=max(0,x)
 \end{equation*}
 
+The backward computaion can be seen as:
+\begin{equation*}
+    \frac{dr_i}{dx_i}=\left\{
+        \begin{aligned}
+            &0, x_i\leq 0\\
+            &1, x_i> 0
+        \end{aligned}
+    \right.
+\end{equation*}
+
 \subsection*{Softmax}
 The softmax function takes as input a vector of k real numbers and normalizes it into a probability distribution consisting of K probabilities proportional to the exponentials of the input numbers.
 And it can be mathematically defined as follow:
@@ -55,7 +65,7 @@ And it can be mathematically defined as follow:
 \end{equation*}
 
 \subsection*{Loss Function}
-We choose to use cross-entropy as 
+We choose to use cross-entropy as our loss function:
 \begin{equation*}
     H(p,q) = -\sum_{i=1}^n p(x_i)log(q(x_i))
 \end{equation*}
